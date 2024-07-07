@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arm Wrestling</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="leftContent">
+          <div class="logo">
+            <img src="./images/BlackArm.svg" id="arms" />
+          </div>
+          <div class="logoName">
+            <h2>ARMWRESTLING</h2>
+          </div>
+        </div>
+        <!-- Navigation Bar -->
+        <div class="navBar">
+          <ul class="nav-list">
+            <li class="list-element item" id="overview">
+              <a href="#a">Overview</a>
+            </li>
+            <li class="list-element item" id="highlights">
+              <a href="#b">Highlights</a>
+            </li>
+            <li class="list-element item" id="get-started">
+              <a href="#c">Get Started</a>
+            </li>
+            <li class="list-element" id="login">
+              <button id="button">Login</button>
+            </li>
+            <li class="list-element item mode-button">
+              <p>Dark Mode</p>
+              <img
+                src="./images/light-bulb-round-svgrepo-com.svg"
+                id="mode-icon"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Navigators -->
+      <div class="fl-t" id="f-overview"><a href="#a">Overview</a></div>
+      <div class="fl-t" id="f-highlights"><a href="#b">Highlights</a></div>
+      <div class="fl-t" id="f-get-started"><a href="#c">How to Play?</a></div>
+
+      <!-- Chat Button -->
+      <div class="chat">Let's Chat</div>
+      <!-- Chat Box -->
+      <div class="chat-box">
+        <div class="question"></div>
+        <div class="options"></div>
+      </div>
+
+      <!-- Login Page -->
+      <div class="login-page">
+        <div class="left-side">
+          <p style="font-size: 50px">Welcome</p>
+          <p style="font-size: 30px">to our</p>
+          <p style="font-size: 60px">ARM</p>
+          <p style="font-size: 40px">Wrestling</p>
+          <p style="font-size: 40px">Community</p>
+        </div>
+        <div class="right-side">
+          <form class="login-form">
+            <img
+              src="./images/cross-svgrepo-com.svg"
+              id="cross"
+              width="40"
+              height="40"
+            />
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+            <br />
+            <label for="age">Age</label>
+            <input type="text" name="age" id="age" />
+            <br />
+
+            <section id="gender">
+              <p>Gender</p>
+              <input type="radio" id="male" name="gender" value="Male" />
+              <label for="male">Male</label><br />
+              <input type="radio" id="female" name="gender" value="Female" />
+              <label for="female">Female</label><br />
+              <input type="radio" id="other" name="gender" value="Other" />
+              <label for="other">Other</label>
+            </section>
+
+            <section id="level">
+              <p>Level</p>
+              <input type="radio" id="beginner" name="level" value="Beginner" />
+              <label for="beginner">Beginner</label><br />
+              <input
+                type="radio"
+                id="intermediate"
+                name="level"
+                value="Intermediate"
+              />
+              <label for="intermediate">Intermediate</label><br />
+              <input type="radio" id="advanced" name="level" value="Advanced" />
+              <label for="advanced">Advanced</label>
+            </section>
+            <button class="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main">
+        <!-- OverView Section -->
+        <div class="overview" id="a">
+          <div class="left">
+            <p class="over-content">
+              Arm wrestling (also spelled armwrestling) is a sport with two
+              opponents who face each other with their bent elbows placed on a
+              table and hands firmly gripped, who then attempt to force the
+              opponent's hand down to the table top ("pin" them). The sport is
+              often casually used to demonstrate the stronger person between two
+              or more people. Arm wrestling is an ancient sport that was revived
+              in the 1950s in the United States. In September 1962, the first
+              world wrestling championship was held in Petaluma, California, as
+              this wrestling was called (literally, “wrist wrestling”). In the
+              early years[when?] other names were used to describe the same
+              sport, including arm turning, arm twisting, twisting wrists, wrist
+              turning and wrist wrestling.
+            </p>
+            <h2 class="types">Types</h2>
+            <p style="font-size: 30px; margin-top: 20px">
+              Casual------------Competition
+            </p>
+          </div>
+          <div class="right">
+            <img src="./images/overview.jpg" class="over-image" />
+            <img src="./images/overview2.jpg" class="over-image" />
+          </div>
+        </div>
+
+        <!-- Highlights Section -->
+        <div class="highlights" id="b"></div>
+
+        <!-- Get Started Section -->
+        <div class="get-started" id="c"></div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
